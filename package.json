@@ -1,0 +1,18 @@
+{
+  "name": "11ty-test",
+  "version": "1.0.0",
+  "description": "Practise 11ty app",
+  "main": "index.js",
+  "dependencies": {
+    "@11ty/eleventy": "^0.11.0",
+    "node-fetch": "^2.6.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "build": "node_modules/.bin/eleventy --input=. --output=docs --formats=11ty.js,html,md",
+    "serve": "npm run build -- --watch --serve",
+    "build-and-tree": "npm run build && tree ./docs"
+  },
+  "author": "Ada Rose Cannon",
+  "license": "MIT"
+}
